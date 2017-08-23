@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #f1f1f1;
+	font-size: 16px;
+}
+h1 {
+	width: 90vw;
+	margin: 40px auto;
+	font-family: 'Open Sans', sans-serif;
+}
+h2, h3, p {
+    font-family: 'Open Sans', sans-serif;
+}
+#search-bar {
+	width: 90vw;
+	margin: 40px auto;
+	font-family: 'Open Sans', sans-serif;
+}
+label {
+	font-size: 18px;
+	padding-right: 20px;
+}
+#search {
+	height: 40px;
+	width: 250px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid #c1c1c1;
+	background: none;
+}
+#search:focus {
+    outline: none;
+}
+#search-icon {
+	cursor: pointer;
+}
+#employee-list {
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 90vw;
+}
+.employee-card {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 29vw;
+	height: 26vh;
+	margin: 10px 0px;
+	background-color: #ffffff;
+	border-radius: 4px;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+.employee-card:hover {
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19)
+}
+.employee-card img {
+	width: 17vh;
+	height: 17vh;
+	border-radius: 50%;
+}
+.employee-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 15vh;
+}
+#modal {
+    display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+#modal-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #F1F1F1;
+	color: #4E4E4E;
+    margin: 7% auto;
+    padding: 20px;
+    width: 30vw;
+    height: 70vh;
+    border-radius: 4px;
+    cursor: default;
+}
+#modal-content img {
+	border-radius: 10vh;
+}
+#modal-content p {
+	padding: 4px 0px;
+}
+#close-modal {
+	display: flex;
+	align-self: flex-end;
+	cursor: pointer;
+}
+#personal-info {
+	text-align: center;
+	width: 25vw;
+	padding: 25px 0px;
+	border-bottom: 1px solid #c1c1c1;
+}
+#additional-info {
+	text-align: center;
+	width: 25vw;
+	padding: 25px 0px;
+}
+#modal-navigation {
+	display: flex;
+	width: 95%;
+	justify-content: space-between;
+}
+#modal-navigation span {
+    cursor: pointer;
+}
